@@ -1,0 +1,12 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"Access for Read/Write for IAM S3 ARN",
+      "Effect":"Allow",
+    "Principal": {"AWS": ["arn:aws:iam::288946686376:user/My_user_test_S3KMS"]},
+      "Action":["s3:*],
+      "Resource":"arn:aws:s3:::my-s3-kms/*"
+    }
+  ]
+}
